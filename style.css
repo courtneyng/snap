@@ -1,0 +1,44 @@
+html {
+    background-color: rgb(17, 16, 16);
+    color: rgb(255, 255, 255);
+    font-family: "arial black";
+    text-align: center;
+}
+
+div {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+	padding: 2px;
+	transition: .3s;
+    
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    transition: .3s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+.gallery-image{
+    position: relative;
+}
+
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
