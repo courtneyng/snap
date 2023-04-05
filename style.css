@@ -3,25 +3,25 @@ html {
     color: rgb(255, 255, 255);
     font-family: "arial black";
     text-align: center;
-}
-
-div {
-    display: block;
+    margin: 0;
+    padding:0;
 }
 
 .gallery {
-    display: flex;
+	display: flex;
 	padding: 2px;
 	transition: .3s;
-    
 }
 
-figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding:0;
+}
+
+.gallery-image {
+    position: relative;
 }
 
 img{
@@ -29,16 +29,14 @@ img{
     width: 100%;
     transition: .3s;
 }
+
 img:hover{
     transform: scale(1.1);
+    
 }
 
-.gallery-image{
-    position: relative;
+.gallery-content{
+    margin: 5px;
+    overflow: hidden;
 }
 
-.gallery-column{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
