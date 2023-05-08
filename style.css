@@ -14,7 +14,9 @@ html {
 }
 
 .gallery-column {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
     flex-direction: column;
     width: fit-content;
     padding:0;
