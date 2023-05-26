@@ -8,15 +8,14 @@ html {
 }
 
 .gallery {
-	display: flex;
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 	padding: 2px;
 	transition: .3s;
 }
 
 .gallery-column {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
     flex-direction: column;
     width: fit-content;
     padding:0;
