@@ -10,7 +10,7 @@ html {
 .gallery {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    /* gap: 1rem; */
 	padding: 2px;
 	transition: .3s;
 }
